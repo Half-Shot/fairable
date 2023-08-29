@@ -1,0 +1,10 @@
+{
+  "name": "fairable",
+  "version": "0.0.0",
+  "description": "Airable API compatible server to host internet radio station data.",
+  "main": "lib/index.js",
+  "repository": "git@github.com:Half-Shot/fairable.git",
+  "author": "Will Hunt <will@half-shot.uk>",
+  "license": "Apache-2.0",
+  "private": false
+}
