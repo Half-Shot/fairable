@@ -2,6 +2,10 @@
 
 A simple service that allows you to run your own service for Airable-compatible devices (on Frontier Silicon hardware).
 
+This project is *very* alpha quality and will be subject to change. I also make no promises about what it might do to your
+hardware, so by running this software you are acknowledging the risks of sending arbitrary bytes to a device and having no visiblity
+on how it may interpret them. **You have been warned**.
+
 ## Devices
 
 Typically, this is useful for certain devices using Frontier Silicon hardware which call out to `airable.wifiradiofrontier.com`.
@@ -14,7 +18,7 @@ First you need to generate a cert. Self signed is fine, so just use the one line
 
 `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/CN=airable.wifiradiofrontier.com"`
 
-Then you can go ahead and customise config.mjs to your liking.
+Then you can go ahead and customise `config.mjs` to your liking.
 
 I've not fully experimented with the hardware, but MP3 streams should do the trick. MPEG-DASH streams like the ones the BBC provide should
 be fine too, but setting one of those up is not so trivial as a standard HTTP MP3 stream.
@@ -24,6 +28,7 @@ your own DNS resolver and repoint to your host IP, but that's out of scope. This
 
 Once you're happy, start the service (with root, because port 443). If you managed to do everything correctly, then the radio
 should list and play your streams.
+
 
 ## Acknowledgements
 

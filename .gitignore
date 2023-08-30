@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 *.pem
+
+/config.mjs
