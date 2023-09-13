@@ -1,0 +1,22 @@
+fsapi:
+    url: http://192.168.1.123/
+    pin: 1234
+
+stations:
+  - name: My Streams
+    slogan: "All the streams :3"
+    description: "Your configured streams"
+    image:
+      width: 150
+      height: 150
+      url: "https://png-file-url"
+    stations:
+        halfy_stream:
+            slogan: "Woof :3"
+            title: "Halfy Radio"
+            description: "There is never a bad time for dog treats"
+            url: "http://stream-url-in-mp3-format"
+            image:
+                width: 150
+                height: 150
+                url: "https://png-file-url"

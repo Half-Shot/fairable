@@ -6,5 +6,8 @@
   "repository": "git@github.com:Half-Shot/fairable.git",
   "author": "Will Hunt <will@half-shot.uk>",
   "license": "Apache-2.0",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "yaml": "^2.3.2"
+  }
 }

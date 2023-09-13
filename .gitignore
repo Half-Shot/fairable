@@ -131,4 +131,4 @@ dist
 
 *.pem
 
-/config.mjs
+/config.yml
