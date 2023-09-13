@@ -5,4 +5,4 @@ COPY package.json yarn.lock ./lib /app
 RUN yarn
 
 EXPOSE 443
-CMD ["node", "/app/lib/index.mjs"]
+CMD ["node", "/app/lib/index.mjs", "/data/config.yml"]
